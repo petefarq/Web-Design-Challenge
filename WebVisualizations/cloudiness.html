@@ -25,7 +25,7 @@
         <div class="col-md-6 col-sm-12">
             <ul class="nav nav-pills d-flex justify-content-end">
                 <li class="nav-item px-1 pt-2 pb-0">
-                    <a class="nav-link disabled bg-primary border border-white text-success mb-3 p-1" href="#">Home</a>
+                    <a class="nav-link active bg-primary border border-white mb-3 p-1" href="index.html">Home</a>
                 </li>
                 <li class="nav-item px-1 pt-2 pb-0">
                     <a class="nav-link active bg-primary border border-white mb-3 p-1" href="comparison.html">Comparison</a>
@@ -35,10 +35,10 @@
                 </li>
                 
                 <li class="nav-item dropdown px-1 pt-2 pb-0">
-                    <a class="nav-link dropdown-toggle bg-primary border border-white mb-3 p-1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <a class="nav-link dropdown-toggle bg-primary border border-white text-success mb-3 p-1" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
                     <div class="dropdown-menu">
                     <a class="dropdown-item" href="temp.html">Temperature</a>
-                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item text-success" href="cloudiness.html">Cloudiness</a>
                     <a class="dropdown-item" href="humidity.html">Humidity</a>
                     <a class="dropdown-item" href="wind.html">Wind Speed</a>
                     </div>
@@ -49,16 +49,13 @@
     
     <!-- Main content-->
     <div class="row">
-        <div class="col-md-7 col-sm-12">
-            <div class="jumbotron">
-                <h3 class="py-4">Summary: Lattitude vs. Weather</h3>
-                <img class="float-md-left p-1 mr-3 mb-3 border border-info" src="visualizations/Lat_vs_Temp.png" alt="Lattitude versus Temperature" width="225px" height="200px">
-                <p>The purpose of this project was to analyze how weather relates to lattitude. To accomplish this we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.</p>
-                <p>We then used Matplotlib to plot various attributes of the weather and see how they related to lattitude. Factors we examined included temperature, wind speed, humidity, and cloudiness. This site provides the source data and visualizations as well as analysis of any trends and correlations.</p>
-            </div>
+        <div class="col-md-7 col-sm-12 border-right border-primary">
+                <h4 class="pt-4">Latitude vs. Cloudiness</h4>
+                <img class="img-fluid border border-info p-1" src="visualizations/Lat_vs_Cloudiness.png" alt="Lattitude versus Cloudiness" width="800px" height="800px">
+                <p style="padding:10px 0 0 0;"><strong class="text-info"> No Correlation:</strong> There is little to no apparent correlation between latitude and cloud cover.</p> 
         </div>
       
-        <!-- Side nav accesses plots using a fixed-width table with cards in each cell -->
+    <!-- Side nav accesses plots using a fixed-width table with cards in each cell -->
         <div class="col-3">
             <div style="width: 310px;">
                 <table class="table table-bordered">
@@ -74,11 +71,11 @@
                                 </div>  
                             </td>
                             <td>
-                                <div class="card pb-1" style="max-width: 9rem;">
+                                <div class="card p-1 border border-success" style="max-width: 9rem;">
                                     <img src="visualizations/Lat_vs_Cloudiness.png" alt="Lat versus Cloudiness" width="140px" height="140px" class="card-img-top">
                                     <div class="card-body">
                                         <h6 class="card-title">Latitude vs. Cloudiness</h6>
-                                        <a href="cloudiness.html" class="btn btn-info">View</a>
+                                        <a href="#" class="btn btn-secondary disabled">View</a>
                                     </div> 
                                 </div>
                             </td>
@@ -105,7 +102,7 @@
                         </tr>
                     </tbody>
                 </table> 
-            </div>    
+            </div>
         </div>
     </div>
 
